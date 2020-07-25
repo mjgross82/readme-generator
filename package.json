@@ -1,0 +1,19 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "A Command Line Interface App that will generate a professional-looking README.md based on the user's responses to a series of questions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjgross82/readme-generator.git"
+  },
+  "author": "Michael J. Gross",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjgross82/readme-generator/issues"
+  },
+  "homepage": "https://github.com/mjgross82/readme-generator#readme"
+}
