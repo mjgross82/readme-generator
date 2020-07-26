@@ -2,7 +2,7 @@
   # README.md Generator for the Command Line  
   ![License: MIT](https://img.shields.io/github/license/mjgross82/readme-generator?style=plastic)  
   ## Description  
-  A Command Line Interface App that will ask the user a series of questions using the inquirer Node.js module and generate a professional looking README.md based on the user's responses to those questions.  
+  A Command Line Interface App that will ask the user a series of questions using the inquirer Node.js module and generate a professional looking README.md based on the user's responses to those questions. This README was created using the app!   
   ## Table of Contents  
   * [Installation](#installation)  
   * [Usage](#usage)  
@@ -10,6 +10,7 @@
   * [Contributing](#contributing)  
   * [Tests](#tests)  
   * [Questions](#questions)  
+  * [Video](#video)
   ## Installation  
   Navigate to the desired directory on your local drive using your computer's terminal app. Enter the command "git clone https://github.com/mjgross82/readme-generator.git" on the command line to clone the repository to your local drive. Enter the command "npm i" on the command line to install the required Node.js modules.  
   ## Usage  
@@ -24,4 +25,6 @@
   If you have any questions regarding this project, please contact me at:  
   GitHub: [mjgross82](https://github.com/mjgross82)  
   Email: [mjgross82@pm.me](mailto:mjgross82@pm.me)
-  
+  ## Video  
+  ![GIF demonstrating installation and use](./assets/readme-generator.gif)  
+  [YouTube video](https://youtu.be/rsbLq93UfeI)
