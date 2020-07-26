@@ -27,4 +27,7 @@
   Email: [mjgross82@pm.me](mailto:mjgross82@pm.me)
   ## Video  
   ![GIF demonstrating installation and use](./assets/readme-generator.gif)  
-  [YouTube video](https://youtu.be/rsbLq93UfeI)
+  [YouTube video](https://youtu.be/rsbLq93UfeI)  
+  ## Screenshots
+  ![Command Line Interface App screenshot](./assets/CLI_screenshot.png)  
+  ![Markdown Screenshot](./assets/markdown_screenshot.png)
