@@ -10,7 +10,7 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is the title of your project?"
+        message: "Please enter a title your project."
       },
       {
         type: "input",
@@ -39,8 +39,8 @@ const questions = [
       },
       {
         type: "input",
-        name: "usage",
-        message: "Please enter any testing instructions for your project."
+        name: "tests",
+        message: "Please enter any testing information for your project."
       },
       {
         type: "input",
