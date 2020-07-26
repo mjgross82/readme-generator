@@ -79,7 +79,7 @@ const promptUser = () => inquirer.prompt(questions);
 
 // An asynchronous function that will return the users answers to the inquirer questions in array questions, and pass them to ./utils/generateMarkdown.js, which will use them to create the README.md.
 async function init() {
-  console.log("Running function init() ...");
+  console.log("Running readme_generator ...");
   try {
     const answers = await promptUser();
     await writeFileAsync("README.md", generateMarkdown(answers));
@@ -92,7 +92,7 @@ async function init() {
 
 // Generic validation to check that the user does not leave a question blank. Reprints the question to the console if validation is failed.
 function genericValidation(value) {
-  if (value != "") return true;
+  if (value != "") return "Answer saved.";
   else return "This section can not be left blank.";
 }
 
@@ -101,7 +101,7 @@ async function gitHubValidation(value) {
     const queryUrl = `https://api.github.com/users/${value}`;
     try {
      const response = await axios.get(queryUrl);
-      if (response.status === 200) return true;
+      if (response.status === 200) return "Answer saved.";
     } catch (error) {
         return "Please enter a valid GitHub Username.";
     };
@@ -110,7 +110,7 @@ async function gitHubValidation(value) {
 // Confirms that the user entered a valid email address.
 function emailValidation(value) {
   const mailformat = /\S+@\S+\.\S+/;
-  if (value.match(mailformat)) return true;
+  if (value.match(mailformat)) return "Answer saved.";
   else return "Please enter a valid email address.";
 };
 
