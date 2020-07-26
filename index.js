@@ -1,10 +1,11 @@
-// Declare dependencies
+// Declare dependencies.
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// An array container inquirer questions the user will be asked to answer.
 const questions = [
     {
         type: "input",
@@ -53,9 +54,10 @@ const questions = [
       },
 ];
     
-// A function to initialize the program
+// A function that will prompt the user with a series of inquirer questions defined in the array questions.
 const promptUser = () => inquirer.prompt(questions);
 
+// An asynchronous function that will return the users answers to the inquirer questions in array questions, and pass them to ./utils/generateMarkdown.js, which will use them to create the README.md.
 async function init() {
     console.log("Running function init() ...");
 
@@ -65,10 +67,12 @@ async function init() {
         await writeFileAsync("README.md", generateMarkdown(answers));
 
         console.log("Succesfully wrote to README.md!");
-    } catch(e) {
+    }
+    // Prints a generic inquirer message to the console if promptUser finds an error.
+    catch(e) {
         console.log(e);
     }
 }
 
-// A function call to initialize the program
+// A function call to initialize the program.
 init();
