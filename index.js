@@ -79,7 +79,7 @@ const promptUser = () => inquirer.prompt(questions);
 
 // An asynchronous function that will return the users answers to the inquirer questions in array questions, and pass them to ./utils/generateMarkdown.js, which will use them to create the README.md.
 async function init() {
-  console.log("Running readme_generator ...");
+  console.log("Running readme-generator ...");
   try {
     const answers = await promptUser();
     await writeFileAsync("README.md", generateMarkdown(answers));
