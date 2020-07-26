@@ -52,10 +52,22 @@ const questions = [
         message: "Please enter your email address."
       },
 ];
-
+    
 // A function to initialize the program
-inquirer.prompt(questions) = (answers) => {
+const promptUser = () => inquirer.prompt(questions);
 
+async function init() {
+    console.log("Running function init() ...");
+
+    try {
+        const answers = await promptUser();
+
+        await writeFileAsync("README.md", generateMarkdown(answers));
+
+        console.log("Succesfully wrote to README.md!");
+    } catch(e) {
+        console.log(e);
+    }
 }
 
 // A function call to initialize the program
