@@ -10,7 +10,8 @@
   * [Contributing](#contributing)  
   * [Tests](#tests)  
   * [Questions](#questions)  
-  * [Video](#video)
+  * [Video](#video)  
+  * [Screenshots](#screenshots)  
   ## Installation  
   Navigate to the desired directory on your local drive using your computer's terminal app. Enter the command "git clone https://github.com/mjgross82/readme-generator.git" on the command line to clone the repository to your local drive. Enter the command "npm i" on the command line to install the required Node.js modules.  
   ## Usage  
@@ -28,6 +29,6 @@
   ## Video  
   ![GIF demonstrating installation and use](./assets/readme-generator.gif)  
   [YouTube video](https://youtu.be/rsbLq93UfeI)  
-  ## Screenshots
+  ## Screenshots  
   ![Command Line Interface App screenshot](./assets/CLI_screenshot.png)  
   ![Markdown Screenshot](./assets/markdown_screenshot.png)
