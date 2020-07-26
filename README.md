@@ -1,6 +1,6 @@
 
   # README.md Generator for the Command Line  
-  ##  ![License: MIT]![GitHub](https://img.shields.io/github/license/mjgross82/readme-generator)
+  ## [![License](https://img.shields.io/github/license/mjgross82/readme-generator?style=plastic)(https://github.com/mjgross82/readme-generator/blob/master/LICENSE)
   ## Description  
   A Command Line Interface App that will ask the user a series of questions using the inquirer Node.js module and generate a professional looking README.md based on the user's responses to those questions.  
   ## Table of Contents  
