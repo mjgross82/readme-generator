@@ -92,7 +92,7 @@ async function init() {
 
 // Generic validation to check that the user does not leave a question blank. Reprints the question to the console if validation is failed.
 function genericValidation(value) {
-  if (value != "") return "Answer saved.";
+  if (value != "") return true;
   else return "This section can not be left blank.";
 }
 
@@ -101,7 +101,7 @@ async function gitHubValidation(value) {
     const queryUrl = `https://api.github.com/users/${value}`;
     try {
      const response = await axios.get(queryUrl);
-      if (response.status === 200) return "Answer saved.";
+      if (response.status === 200) return true;
     } catch (error) {
         return "Please enter a valid GitHub Username.";
     };
@@ -110,7 +110,7 @@ async function gitHubValidation(value) {
 // Confirms that the user entered a valid email address.
 function emailValidation(value) {
   const mailformat = /\S+@\S+\.\S+/;
-  if (value.match(mailformat)) return "Answer saved.";
+  if (value.match(mailformat)) return true;
   else return "Please enter a valid email address.";
 };
 
