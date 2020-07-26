@@ -11,7 +11,7 @@ const questions = [
   {
     type: "input",
     name: "title",
-    message: "Please enter a title your project.",
+    message: "Please enter a title for your project.",
     validate: genericValidation,
   },
   {
@@ -35,6 +35,7 @@ const questions = [
   {
     type: "list",
     name: "license",
+    message: "Please select a license from the list below.",
     choices: [
       "MIT",
       "MPL 2.0",
