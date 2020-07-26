@@ -14,7 +14,7 @@
   ## Usage  
   Enter the command "node index.js" on the command line to run the app. The app will ask you a series of questions through your terminal and use built-in validation methods to confirm that no answers are left blank and that a valid Github username and email address format were provided. Once all questions have been answered, the app will format and write your answers to a README.md in the readme-generator directory.
   ## License  
-  ![License: MIT](https://img.shields.io/github/license/mjgross82/readme-generator?style=plastic)
+  ![License: MIT](https://img.shields.io/github/license/mjgross82/readme-generator?style=plastic)  
   This project is licensed under the MIT license.  
   ## Contributing  
   Please feel free to contact me using the contact information provided below if you would like to contribute or request additional functionality.  
